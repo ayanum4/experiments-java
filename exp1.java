@@ -2,13 +2,7 @@ import java.util.Scanner;
 
 class exp1{
     public static void main(String[] args) {
-        Scanner nameScanner = new Scanner(System.in);
-        String name = nameScanner.nextLine();
-        int num = 0;
-        for (int i = 0; i < name.length(); i++) {
-            char ch;
-            ch = name.charAt(i);
-            num++;
-            System.out.println(ch + " " + num + ": " + (int)ch);
-        }
+        Scanner intScanner = new Scanner(System.in);
+        int i = 0X1564;
+        System.out.print(i);
 }}
