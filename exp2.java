@@ -1,18 +1,16 @@
 class exp2 {
     public static void main(String[] args) {
-        String text1 = "\"Список товаров\"\t";
-        String text2 = "Цена\t";
-        String text3 = "Количество\n";
+        String text1 = "\"Список товаров\"";
+        String text2 = "Цена";
+        String text3 = "Количество";
 
-        System.out.print(text1);
-        System.out.print(text2);
-        System.out.print(text3);
+        String header = String.format("%-20s %-10s %-10s", text1, text2, text3);
+        System.out.println(header);
 
-        int len = text1.length() + text2.length() + text3.length();
-
-        for (int i = 0; i < len; i++) {
+        for (int i = 0; i < header.length(); i++) {
             System.out.print("-");
         }
+        System.out.println();
         
         System.out.print("Молоко\t");
         System.out.print("380\t");
