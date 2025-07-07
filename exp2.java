@@ -12,8 +12,12 @@ class exp2 {
         }
         System.out.println();
         
-        System.out.print("Молоко\t");
-        System.out.print("380\t");
-        System.out.print("1\n");
+        String products[] = {"Молоко", "Хлеб"};
+        int prices[] = {380, 120};
+        int quantities[] = {1, 8};
+
+        for (int i = 0; i < products.length; i++) {
+            System.out.printf("%-20s %-10s %-10s\n", products[i], prices[i], quantities[i]);
+        }
     }
 }
